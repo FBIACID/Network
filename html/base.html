@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)file:///F:/Temp/Server/file.html -->
+<html lang="zh-CN"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="theme-color" content="#4d545d">
+	<link rel="shortcut icon" href="/Server/favicon.ico">
+	<link href="/Server/css/app.b98f1720.css" rel="preload" as="style">
+	<link href="/Server/css/app.b98f1720.css" rel="stylesheet">
+	<script>
+function getCookie(cname){
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+	}
+	return "";
+}
+function checkCookie(){
+	var user=getCookie("username");
+	var pass=getCookie("pass");
+	if (user!="" && pass!=""){
+		//alert("Weclcome " + user + " ");
+		return;
+	}
+	else {
+		alert("Please login");
+		window.location.href='/Server/html/login.html';
+
+	}
+}
+</script>
+	</head>
+	<body onload="checkCookie()">
+		<nav class="navbar navbar-expand-lg navbar-dark no-select"><div class="container"><a class="navbar-brand">NetWork Programing</a> </div></nav><noscript><style>.navbar-collapse {
+                display: block !important;
+            }</style><div class=container><div class="alert alert-danger"><strong>非常抱歉：如果您的浏览器不启用 javascript，爱盘页面可能无法正常使用，请在浏览器设置中启用 javascript。</strong></div></div></noscript><!--[if lt IE 9]>
+    <div class="container">
+        <div class="alert alert-danger">
+            <strong>非常抱歉：使用 IE 8 或者更早版本的浏览器访问本网站可能给您带来较差的交互体验，请您将浏览器升级至最新版本。推荐使用 <a href="https://www.google.cn/chrome/">Chrome 浏览器</a> 访问本页面。</strong>
+        </div>
+    </div>
+    <![endif]-->
+<div class="container"></div>

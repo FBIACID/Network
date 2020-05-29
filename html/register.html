@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Spin Login Form Responsive Widget Template :: xmoban.cn</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Spin Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+
+
+<script type="text/javascript">
+	function checkpassword(){
+		var password1 = document.getElementById("password1").value;
+		var password2 = document.getElementById("password2").value;
+		if(password1 == password2){
+			document.getElementById("thisi").innerHTML="<br><font color='green'>Confirm password equal to password</font>";
+			document.getElementById("submit").disabled = false;
+		}else{
+			document.getElementById("thisi").innerHTML="<br><font color='red'>Confirm password not equal to password</font>";
+			document.getElementById("submit").disabled = true;
+		}
+	}
+</script>
+<link rel="shortcut icon" href="../favicon.ico">
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/r_style.css" rel='stylesheet' type='text/css' />
+
+
+
+
+</head>
+<body>
+<h1>Register </h1>
+<div class="clear-loading spinner">
+<span></span>
+</div>
+<div class="w3ls-login box box--big">
+
+<form>
+<div class="agile-field-txt">
+<label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
+<input type="text" name="nemail" placeholder="Enter User Name" required="" />
+</div>
+<div class="agile-field-txt">
+<label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
+<input type="password" name="password" placeholder="Enter Password" required="" id="password1" />
+</div>
+<div class="agile-field-txt">
+<label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Confirm password </label>
+<input type="password" placeholder="Confirm password" onkeyup="checkpassword()" required="" id="password2"/>
+<span id="thisi"></span>
+</div>
+<input type="submit" value="Register" id="submit">
+</form>
+
+</div>
+
+
+<div class="copy-wthree">
+<p>© 2018 Spin Login Form . All Rights Reserved | Design by &&&
+</p>
+</div>
+
+
+</body>
+</html>
